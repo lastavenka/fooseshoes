@@ -84,7 +84,8 @@ module.exports = function (grunt) {
                   "img/*.*",
                   "js/**",
                   "index.html",
-                  "bower_components"
+                  "bower_components",
+                  "type/**"
               ],
                     dest: "build"
           }]
@@ -156,7 +157,7 @@ module.exports = function (grunt) {
 
             less: {
                 files: ["source/less/**/*.less"],
-                tasks: ["less"],
+                tasks: ["less", "cssmin"],
                 options: {
                     spawn: false
                 },

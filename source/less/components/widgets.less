@@ -1,0 +1,149 @@
+.widgets {
+    background-color: @grey-24;
+    width: 100%;
+    padding-top: 50px;
+    
+    &__wrap {
+        .wrapper;
+        padding-left: 5%;
+        padding-right: 5%;
+        max-width: 860px;
+    }
+    
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 30px;
+    }
+    
+    &__text {
+        width: 28%;
+    }
+    
+    &__title {
+        font-family: @font-family-base;
+        font-size: @font-size-base +.2;
+        line-height: @line-height-base + .2;
+        color: @grey-7d;
+        text-transform: uppercase;
+        margin: 0;
+        margin-bottom: 20px;
+    }
+    
+    &__message {
+        font-family: @font-family-base;
+        font-size: @font-size-base +.2;
+        line-height: @line-height-base + .2;
+        color: @grey-a4;
+        font-style: italic;
+        margin: 0;
+        
+        span {
+            color: @green;
+        }
+    }
+    
+    &__date {
+        display: block;
+        color: @biege-grey;
+        margin-top: 8px;
+        margin-bottom: 10px;
+    }
+    
+    &__twi {
+        width: 28%;
+    }
+    
+    &__flickr {
+        width: 28%;
+        
+        &-inner {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+    }
+    
+    &__img {
+        margin-bottom: 8px;
+    }
+}
+
+.contact {
+    border-top: 1px solid @grey-1c;
+    
+    
+    &__wrap {
+        display: flex;
+        justify-content: space-between;
+        .wrapper;
+        padding-left: 5%;
+        padding-right: 5%;
+        max-width: 860px;
+        padding-top: 37px;
+        padding-bottom: 45px;
+    }
+    
+    &__subscribe {
+        width: 30%;
+        display: flex;
+        justify-content: flex-start;
+        height: 36px;
+    }
+    
+    &__email {
+        background-color: @grey-2e;
+        outline: none;
+        border: none;
+        width: 81%;
+        min-width: 145px;
+        padding-left: 5%;
+        padding-top: 12px;
+        padding-bottom: 11px;
+        font-style: italic;
+        color: @grey-7d;
+        
+        &:focus {
+          outline: none;
+        }
+    }
+    
+    &__submit {
+        border: none;
+        display: block;
+        background-color: @grey-7d;
+        font-size: 0;
+        text-align: center;
+        padding-top: 12px;
+        padding-bottom: 12px;
+        width: 14%;
+        
+        svg {
+            fill: @grey-2e;
+        }
+    }
+    
+    &__social {
+        width: 25%;
+        .list-to-flex;
+        margin: 0;
+        
+        li {
+            text-align: center;
+            width: 17%;
+//            margin-right: 1px;
+        }
+        
+        a {
+            display: block;
+            height: 15px;
+            padding: 32% 0;
+            background-color: @grey-2e;
+            font-size: 0;
+        }
+        
+        svg {
+          fill: @grey-7d;
+        }
+    }
+}
