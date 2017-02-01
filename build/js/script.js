@@ -1,5 +1,6 @@
 ;( function( window, document )
 {
+    localStorage.clear();
     'use strict';
 
     var file     = 'img/sprite.svg',

@@ -32,9 +32,16 @@
         line-height: @line-height-base + .9;
     }
     
+    &__filter-form {
+        width: 74%;
+        display: flex;
+        justify-content: space-between;
+    }
+    
     &__filter-item {
+        display: block;
         position: relative;
-        width: 23%;
+        width: 31%;
         min-width: 120px;
         text-align: center;
         background-color: @grey-24;
@@ -46,11 +53,23 @@
         padding-top: 17px;
         padding-bottom: 18px;
         
-        svg {
-            fill: @white;
+        &:after {
+            content: "";
+            width: 14px;
+            height: 14px;
             position: absolute;
             right: 10%;
             top: 37%;
+            background-image: url("../img/uncheck.svg");
+            background-size: contain;
+        }
+    }
+    
+    &__filter-input {
+        display: none;
+        
+        &:checked + .products__filter-item:after {
+            background-image: url("../img/check.svg");
         }
     }
     
@@ -152,11 +171,11 @@
         cursor: pointer;
         
         &:hover {
-            color: @grey-24;
-            border-color: @grey-24;
+            color: @biege-brown;
+            border-color: @biege-brown;
             
             svg {
-                fill: @grey-24;
+                fill: @biege-brown;
             }
         }
         

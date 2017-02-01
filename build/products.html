@@ -65,15 +65,14 @@
         <div class="products__filter">
             <div class="products__filter-wrap">
                 <div class="products__filter-title">Shop by</div>
-                <div class="products__filter-item">Brands<svg width="14" height="14">
-                                        <use xlink:href="#check"></use>
-                                    </svg></div>
-                <div class="products__filter-item">Categories<svg width="14" height="14">
-                                        <use xlink:href="#check"></use>
-                                    </svg></div>
-                <div class="products__filter-item">Price<svg width="14" height="14">
-                                        <use xlink:href="#check"></use>
-                                    </svg></div>
+                <form class="products__filter-form" action="#" method="get">
+                    <input class="products__filter-input" type="checkbox" id="brands" checked>
+                    <label class="products__filter-item" for="brands">Brands</label>
+                    <input class="products__filter-input" type="checkbox" id="categories" checked>
+                    <label class="products__filter-item" for="categories">Categories</label>
+                    <input class="products__filter-input" type="checkbox" id="price" checked>
+                    <label class="products__filter-item" for="price">Price</label>
+                </form>
             </div>
         </div>
         <div class="products__wrap">

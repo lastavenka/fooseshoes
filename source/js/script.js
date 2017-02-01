@@ -54,3 +54,10 @@
     catch( e ){}
 
 }( window, document ) );
+
+var viewItem = document.querySelector(".products__view-item");
+
+viewItem.addEventListener("click", function (event) {
+    event.preventDefault();
+    this.classList.add("products__view-item--active");
+});
