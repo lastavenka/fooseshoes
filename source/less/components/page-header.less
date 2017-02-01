@@ -75,11 +75,11 @@
         flex-grow: 1;
         
         &:last-child {
-        border-right: 1px solid @grey-ee;
-    }
+            border-right: 1px solid @grey-ee;
+        }
     }
     
-    a {
+    &__link {
         display: block;
         font-family: @font-family-base;
         font-size: @font-size-base + .4;
@@ -90,6 +90,14 @@
         width: 100%;
         text-align: center;
         border-left: 1px solid @grey-ee;
+        
+        &--active {
+            color: @green;
+        }
+        
+        &:hover {
+            color: @green;
+        }
     }
 }
 

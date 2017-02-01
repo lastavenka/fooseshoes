@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Fooseshoes</title>
+    <title>Products Fooseshoes</title>
     <link rel="stylesheet" href="css/style.min.css" media="screen" />
 </head>
 
@@ -25,8 +25,8 @@
             <div class="header-menu__wrap">
                 <nav class="main-nav">
                     <ul class="main-nav__list">
-                        <li class="main-nav__item"><a class="main-nav__link main-nav__link--active" href="#">Home</a></li>
-                        <li class="main-nav__item"><a class="main-nav__link" href="#">Products</a></li>
+                        <li class="main-nav__item"><a class="main-nav__link" href="#">Home</a></li>
+                        <li class="main-nav__item"><a class="main-nav__link main-nav__link--active" href="#">Products</a></li>
                         <li class="main-nav__item"><a class="main-nav__link" href="#">About</a></li>
                         <li class="main-nav__item"><a class="main-nav__link" href="#">Pages</a></li>
                         <li class="main-nav__item"><a class="main-nav__link" href="#">Blog</a></li>
@@ -51,87 +51,54 @@
         </div>
     </header>
     <div class="promo">
-        <section class="promo-slider">
-            <div class="promo-slider__wrap">
-                <span class="promo-slider__price">$145.99</span>
-                <h1 class="promo-slider__title">Pink Shoes<br>2013 Collection</h1>
+        <section class="promo-slider promo-slider--catalog">
+            <div class="promo-slider__wrap promo-slider__wrap--catalog">
+                <div class="promo-slider__inner">
+                    <span class="promo-slider__price promo-slider__price--catalog">$145.99</span>
+                    <h1 class="promo-slider__title promo-slider__title--catalog">Pink Shoes<br>2013 Collection</h1>
+                </div>
                 <p class="promo-slider__text">Nunc non fermentum nunc. Sed ut ante eget leo tempor consequat sit amet eu orci. Donec dignissim dolor eget..</p>
-                <ul class="promo-slider__action">
-                    <li class="promo-slider__view">
-                        <a href="#">
-                            <svg width="16" height="16">
-                                <use xlink:href="#eye-view"></use>
-                            </svg>View</a>
-                    </li>
-                    <li class="promo-slider__wishlist">
-                        <a href="#">
-                            <svg width="16" height="16">
-                                <use xlink:href="#star"></use>
-                            </svg>Wishlist</a>
-                    </li>
-                    <li class="promo-slider__share">
-                        <a href="#">
-                            <svg width="16" height="16">
-                                <use xlink:href="#share-arrow"></use>
-                            </svg>Share</a>
-                    </li>
-                    <li class="promo-slider__buy">
-                        <a href="#">
-                            <svg width="16" height="16">
-                                <use xlink:href="#shopping-cart-buy"></use>
-                            </svg>Buy</a>
-                    </li>
-                </ul>
             </div>
         </section>
-        <div class="promo-nav">
-            <div class="promo-nav__wrap">
-                <ul class="promo-nav__switch">
-                    <li class="promo-nav__switch-item promo-nav__switch-item--active"></li>
-                    <li class="promo-nav__switch-item"></li>
-                    <li class="promo-nav__switch-item"></li>
-                    <li class="promo-nav__switch-item"></li>
-                    <li class="promo-nav__switch-item"></li>
-                </ul>
-                <ul class="promo-nav__list">
-                    <li class="promo-nav__item">
-                        <h3 class="promo-nav__title">Pink Shoes</h3>
-                        <span class="promo-nav__text">Now af $145,99</span>
-                    </li>
-                    <li class="promo-nav__item">
-                        <h3 class="promo-nav__title">Anna Field</h3>
-                        <span class="promo-nav__text">Limited Edition</span>
-                    </li>
-                    <li class="promo-nav__item">
-                        <h3 class="promo-nav__title">Prada</h3>
-                        <span class="promo-nav__text">Summer is coming</span>
-                    </li>
-                    <li class="promo-nav__item">
-                        <h3 class="promo-nav__title">Casadei</h3>
-                        <span class="promo-nav__text">All Colors avaiable</span>
-                    </li>
-                    <li class="promo-nav__item">
-                        <h3 class="promo-nav__title">Mellow Yellow</h3>
-                        <span class="promo-nav__text">Free delivery</span>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </div>
-    <div class="specials">
-        <div class="specials__wrap">
-            <ul class="specials__list">
-                <li><a href="#" class="specials__item specials__item--sale"><span>On sale</span></a></li>
-                <li><a href="#" class="specials__item specials__item--offers"><span>Special offers</span></a></li>
-                <li><a href="#" class="specials__item specials__item--musthave"><span>Must have</span></a></li>
-            </ul>
-        </div>
     </div>
     <div class="products">
+        <div class="products__filter">
+            <div class="products__filter-wrap">
+                <div class="products__filter-title">Shop by</div>
+                <div class="products__filter-item">Brands<svg width="14" height="14">
+                                        <use xlink:href="#check"></use>
+                                    </svg></div>
+                <div class="products__filter-item">Categories<svg width="14" height="14">
+                                        <use xlink:href="#check"></use>
+                                    </svg></div>
+                <div class="products__filter-item">Price<svg width="14" height="14">
+                                        <use xlink:href="#check"></use>
+                                    </svg></div>
+            </div>
+        </div>
         <div class="products__wrap">
             <div class="products__inner">
-                <h2 class="products__title">New arrivals on FooseShoes</h2>
-                <a href="" class="products__btn">Show all</a>
+                <div class="products__title-inner">
+                    <h2 class="products__title">All Products</h2>
+                    <ul class="products__breadcrumbs">
+                        <li><a href="#">Name</a><svg width="7" height="7">
+                                        <use xlink:href="#arrow-to-right"></use>
+                                    </svg></li>
+                        <li><a href="#">All Products</a></li>
+                    </ul>
+                </div>
+                <div class="products__sort-inner">
+                    View as
+                    <div class="products__view-item products__view-item--active"><svg width="15" height="28">
+                                        <use xlink:href="#tile"></use>
+                                    </svg></div>
+                    <div class="products__view-item"><svg width="16" height=28>
+                                        <use xlink:href="#list"></use>
+                                    </svg></div>
+                    <div class="products__btn products__btn--sort">Sort alphabetically <svg width="14" height="14">
+                                        <use xlink:href="#check"></use>
+                                    </svg></div>
+                </div>
             </div>
             <ul class="products__list">
                 <li class="products__item">
@@ -241,10 +208,6 @@
                     </div>
                 </li>
             </ul>
-            <div class="products__inner products__inner--home">
-                <h2 class="products__title">Best sellers of the month</h2>
-                <a href="#" class="products__btn">Show all</a>
-            </div>
             <ul class="products__list">
                 <li class="products__item">
                     <a href="#" class="products__link">
@@ -351,9 +314,116 @@
                     </div>
                 </li>
             </ul>
+            <ul class="products__list">
+                <li class="products__item">
+                    <a href="#" class="products__link">
+                        <img src="img/products__item1.png" srcset="img/products__item1@2x.png 2x" alt="Even&Odd" class="products__img" width="53%" height="auto">
+                    </a>
+                    <div class="products__item-inner">
+                        <span class="products__price">$145,99</span>
+                        <a class="products__name">Even&amp;Odd</a>
+                        <ul class="products__action">
+                            <li>
+                                <a href="#">
+                                    <svg width="16" height="16">
+                                        <use xlink:href="#eye-view"></use>
+                                    </svg>View</a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <svg width="16" height="16">
+                                        <use xlink:href="#star"></use>
+                                    </svg>Wishlist</a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <svg width="16" height="14">
+                                        <use xlink:href="#share-arrow"></use>
+                                    </svg>Share</a>
+                            </li>
+                            <li class="products__action--buy">
+                                <a href="#">
+                                    <svg width="16" height="16">
+                                        <use xlink:href="#shopping-cart-buy"></use>
+                                    </svg>Buy</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                </li>
+                <li class="products__item">
+                    <a href="#" class="products__link">
+                        <span class="products__flag products__flag--sale">On sale!</span><img src="img/products__item2.png" srcset="img/products__item2@2x.png 2x" alt="Even&Odd" class="products__img" width="53%" height="auto">
+                    </a>
+                    <div class="products__item-inner">
+                        <span class="products__price">$145,99</span>
+                        <a class="products__name">Even&amp;Odd</a>
+                        <ul class="products__action">
+                            <li>
+                                <a href="#">
+                                    <svg width="16" height="16">
+                                        <use xlink:href="#eye-view"></use>
+                                    </svg>View</a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <svg width="16" height="16">
+                                        <use xlink:href="#star"></use>
+                                    </svg>Wishlist</a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <svg width="16" height="14">
+                                        <use xlink:href="#share-arrow"></use>
+                                    </svg>Share</a>
+                            </li>
+                            <li class="products__action--buy">
+                                <a href="#">
+                                    <svg width="16" height="16">
+                                        <use xlink:href="#shopping-cart-buy"></use>
+                                    </svg>Buy</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="products__item">
+                    <a href="#" class="products__link">
+                        <img src="img/products__item3.png" srcset="img/products__item3@2x.png 2x" alt="Buffalo Decolettè" class="products__img" width="48%" height="auto">
+                    </a>
+                    <div class="products__item-inner">
+                        <span class="products__price">$145,99</span>
+                        <a class="products__name">Buffalo Decolettè</a>
+                        <ul class="products__action">
+                            <li>
+                                <a href="#">
+                                    <svg width="16" height="16">
+                                        <use xlink:href="#eye-view"></use>
+                                    </svg>View</a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <svg width="16" height="16">
+                                        <use xlink:href="#star"></use>
+                                    </svg>Wishlist</a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <svg width="16" height="14">
+                                        <use xlink:href="#share-arrow"></use>
+                                    </svg>Share</a>
+                            </li>
+                            <li class="products__action--buy">
+                                <a href="#">
+                                    <svg width="16" height="16">
+                                        <use xlink:href="#shopping-cart-buy"></use>
+                                    </svg>Buy</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
         </div>
     </div>
-
     <div class="addons">
         <div class="addons__wrap">
             <div class="addons__inner">

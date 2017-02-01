@@ -483,6 +483,145 @@ The `.retina-sprites` mixin generates a CSS rule and media query for retina grou
 
 .retina-sprites(@retina-groups);
 */
+.addons {
+  background-color: #ebe7df;
+}
+.addons__wrap {
+  padding: 0 2%;
+  margin: auto;
+  max-width: 940px;
+  padding-bottom: 23px;
+}
+.addons__inner {
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid #bcb5a7;
+  padding-top: 25px;
+  flex-wrap: wrap;
+}
+.shipping {
+  width: 19%;
+  background-color: #dfdbd4;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-left: 1.5%;
+  padding-right: 2%;
+}
+.shipping__title {
+  font-family: Aller, Arial, sans-serif;
+  font-size: 1.4rem;
+  line-height: 1.6rem;
+  font-weight: bold;
+  color: #242424;
+  text-transform: uppercase;
+  margin: 0;
+}
+.shipping__text {
+  margin: 0;
+  font-family: Aller, Arial, sans-serif;
+  font-size: 1.2rem;
+  line-height: 1.6rem;
+  color: #242424;
+  margin-top: 20px;
+}
+.testimonials {
+  width: 19%;
+  min-width: 90px;
+  background-color: #dfdbd4;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-left: 1.5%;
+  padding-right: 2%;
+}
+.testimonials__title {
+  font-family: Aller, Arial, sans-serif;
+  font-size: 1.4rem;
+  line-height: 1.6rem;
+  font-weight: bold;
+  color: #242424;
+  text-transform: uppercase;
+  margin: 0;
+}
+.testimonials__text {
+  margin: 0;
+  padding: 0;
+  font-family: Aller, Arial, sans-serif;
+  font-size: 1.2rem;
+  line-height: 1.6rem;
+  color: #242424;
+  margin-top: 20px;
+}
+.testimonials cite {
+  display: block;
+  font-style: italic;
+  margin-top: 10px;
+}
+.blog {
+  width: 47%;
+  background-color: #dfdbd4;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-left: 1.5%;
+  padding-right: 2%;
+}
+.blog__title {
+  font-family: Aller, Arial, sans-serif;
+  font-size: 1.4rem;
+  line-height: 1.6rem;
+  font-weight: bold;
+  color: #242424;
+  text-transform: uppercase;
+  margin: 0;
+}
+.blog__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  margin-top: 20px;
+}
+.blog__item {
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 14px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.blog__date {
+  display: block;
+  background-color: #57c5a0;
+  width: 9%;
+  padding-top: 9px;
+  padding-bottom: 8px;
+  min-width: 18px;
+  font-family: Aller, Arial, sans-serif;
+  font-size: 1rem;
+  line-height: 1.2rem;
+  font-weight: bold;
+  color: #fff;
+  text-transform: uppercase;
+  text-align: center;
+}
+.blog__inner {
+  margin-left: 10px;
+}
+.blog__news-title {
+  font-family: Aller, Arial, sans-serif;
+  font-size: 1.4rem;
+  line-height: 1.6rem;
+  font-weight: bold;
+  color: #242424;
+  margin: 0;
+}
+.blog__news-title:hover {
+  color: #242424;
+}
+.blog__lead {
+  font-family: Aller, Arial, sans-serif;
+  font-size: 1.2rem;
+  line-height: 1.6rem;
+  color: #242424;
+  margin: 0;
+}
 .page-footer {
   background-color: #2e2e2e;
   width: 100%;
@@ -504,6 +643,7 @@ The `.retina-sprites` mixin generates a CSS rule and media query for retina grou
   padding-top: 27px;
   padding-bottom: 30px;
   align-items: center;
+  flex-wrap: wrap;
 }
 .page-footer__nav {
   color: #fff;
@@ -579,7 +719,7 @@ The `.retina-sprites` mixin generates a CSS rule and media query for retina grou
 .main-nav__item:last-child {
   border-right: 1px solid #eee;
 }
-.main-nav a {
+.main-nav__link {
   display: block;
   font-family: Aller, Arial, sans-serif;
   font-size: 1.6rem;
@@ -590,6 +730,12 @@ The `.retina-sprites` mixin generates a CSS rule and media query for retina grou
   width: 100%;
   text-align: center;
   border-left: 1px solid #eee;
+}
+.main-nav__link--active {
+  color: #57c5a0;
+}
+.main-nav__link:hover {
+  color: #57c5a0;
 }
 .user-menu {
   display: flex;
@@ -662,155 +808,65 @@ The `.retina-sprites` mixin generates a CSS rule and media query for retina grou
   padding-top: 30px;
   padding-bottom: 23px;
 }
-.arrivals__inner {
+.products__filter {
+  background-color: #2e2e2e;
+}
+.products__filter-wrap {
+  padding: 0 2%;
+  margin: auto;
+  max-width: 940px;
+  padding-top: 15px;
+  padding-bottom: 15px;
   display: flex;
   justify-content: space-between;
   align-items: baseline;
+  flex-wrap: wrap;
 }
-.arrivals__title {
-  font-family: Aller, Arial, sans-serif;
-  font-weight: 300;
-  font-size: 2.5rem;
-  line-height: 6rem;
-  color: #242424;
-  margin: 0;
-}
-.arrivals__btn {
-  color: #bcb5a7;
-  font-family: Aller, Arial, sans-serif;
-  font-weight: bold;
-  font-size: 1.4rem;
-  line-height: 2.5rem;
-  padding-left: 2.5%;
-  padding-right: 2.5%;
-  padding-top: 6px;
-  padding-bottom: 6px;
-  border: 1px solid #bcb5a7;
-}
-.arrivals__btn:hover {
-  color: #242424;
-  border-color: #242424;
-}
-.arrivals__list {
-  display: flex;
-  justify-content: space-between;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  margin-top: 28px;
-}
-.arrivals__item {
-  margin: 0;
-  padding: 0;
-  background-color: #fff;
-  width: 32%;
-  min-height: 270px;
-  display: flex;
-  justify-content: space-between;
-  flex-direction: column;
-  position: relative;
-}
-.arrivals__item:hover .arrivals__action {
-  display: flex;
-}
-.arrivals__link {
-  padding-top: 22px;
-}
-.arrivals__flag {
-  top: 0;
-  right: 4%;
-  position: absolute;
-  display: block;
-  min-width: 30px;
+.products__filter-title {
   width: 23%;
   text-align: center;
-  text-transform: uppercase;
   color: #fff;
   font-family: Aller, Arial, sans-serif;
-  font-weight: bold;
-  font-size: 1.3rem;
-  line-height: 1.5rem;
+  font-size: 2.2rem;
+  line-height: 2.5rem;
 }
-.arrivals__flag--sale {
+.products__filter-item {
+  position: relative;
+  width: 23%;
+  min-width: 120px;
+  text-align: center;
   background-color: #242424;
-  padding-top: 8%;
-  padding-bottom: 8%;
-}
-.arrivals__action {
-  z-index: 100;
-  display: none;
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  justify-content: space-between;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  width: 45%;
-  height: 100%;
-  background-color: #fff;
-  padding-left: 14%;
-  padding-right: 14%;
-  align-items: center;
-}
-.arrivals__action a {
-  display: block;
-  height: 16px;
-  font-size: 0;
-}
-.arrivals__action svg {
-  fill: #6e6e6e;
-}
-.arrivals__action--buy svg {
-  fill: #57c5a0;
-}
-.arrivals .arrivals__img {
-  display: block;
-  margin: auto;
-}
-.arrivals__item-inner {
-  position: relative;
-  padding-top: 11px;
-  padding-bottom: 12px;
-  border-top: 1px solid #ccc;
-}
-.arrivals__price {
-  min-width: 50px;
-  left: 4%;
-  bottom: 0;
-  display: block;
-  position: absolute;
-  font-family: Aller, Arial, sans-serif;
-  font-size: 1.3rem;
-  line-height: 2.5rem;
-  font-weight: bold;
   color: #fff;
-  background-color: #57c5a0;
-  margin: 0;
-  text-align: center;
-  width: 23%;
-  padding-top: 20px;
-  padding-bottom: 21px;
-}
-.arrivals__name {
   font-family: Aller, Arial, sans-serif;
   font-size: 1.8rem;
   line-height: 2.5rem;
-  font-weight: normal;
-  color: #242424;
-  margin: 0;
-  margin-left: 32%;
+  cursor: pointer;
+  padding-top: 17px;
+  padding-bottom: 18px;
 }
-.bestsellers {
-  margin-top: 30px;
-  margin-bottom: 47px;
+.products__filter-item svg {
+  fill: #fff;
+  position: absolute;
+  right: 10%;
+  top: 37%;
 }
-.bestsellers__inner {
+.products__inner {
   display: flex;
   justify-content: space-between;
   align-items: baseline;
+  flex-wrap: wrap;
 }
-.bestsellers__title {
+.products__inner--home {
+  margin-top: 35px;
+}
+.products__title-inner {
+  width: 30%;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  flex-wrap: wrap;
+}
+.products__title {
   font-family: Aller, Arial, sans-serif;
   font-weight: 300;
   font-size: 2.5rem;
@@ -818,7 +874,58 @@ The `.retina-sprites` mixin generates a CSS rule and media query for retina grou
   color: #242424;
   margin: 0;
 }
-.bestsellers__btn {
+.products__breadcrumbs {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.products__breadcrumbs li {
+  margin-right: 20px;
+  position: relative;
+}
+.products__breadcrumbs a {
+  color: #bcb5a7;
+  font-family: Aller, Arial, sans-serif;
+  font-size: 1.2rem;
+  line-height: 2.5rem;
+}
+.products__breadcrumbs svg {
+  fill: #bcb5a7;
+  position: absolute;
+  right: -45%;
+  top: 40%;
+}
+.products__sort-inner {
+  color: #bcb5a7;
+  font-family: Aller, Arial, sans-serif;
+  font-weight: bold;
+  font-size: 1.4rem;
+  line-height: 2.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 37%;
+}
+.products__view-item {
+  width: 28px;
+  height: 28px;
+  border: 1px solid #bcb5a7;
+  text-align: center;
+  cursor: pointer;
+}
+.products__view-item:hover {
+  border-color: #898170;
+}
+.products__view-item--active {
+  border-color: #898170;
+}
+.products__view-item svg {
+  fill: #bcb5a7;
+}
+.products__btn {
+  position: relative;
   color: #bcb5a7;
   font-family: Aller, Arial, sans-serif;
   font-weight: bold;
@@ -829,43 +936,61 @@ The `.retina-sprites` mixin generates a CSS rule and media query for retina grou
   padding-top: 6px;
   padding-bottom: 6px;
   border: 1px solid #bcb5a7;
+  cursor: pointer;
 }
-.bestsellers__btn:hover {
+.products__btn:hover {
   color: #242424;
   border-color: #242424;
 }
-.bestsellers__list {
+.products__btn:hover svg {
+  fill: #242424;
+}
+.products__btn--sort {
+  margin-left: 6%;
+  padding-left: 10%;
+  padding-right: 10%;
+  font-weight: bold;
+}
+.products__btn svg {
+  position: absolute;
+  fill: #bcb5a7;
+  right: 5%;
+  top: 33%;
+}
+.products__list {
   display: flex;
   justify-content: space-between;
   list-style: none;
   margin: 0;
   padding: 0;
   margin-top: 28px;
+  margin-bottom: 20px;
 }
-.bestsellers__item {
+.products__list:last-child {
+  margin-bottom: 0;
+}
+.products__item {
   margin: 0;
   padding: 0;
   background-color: #fff;
-  width: 32%;
+  width: 31%;
   min-height: 270px;
   display: flex;
   justify-content: space-between;
   flex-direction: column;
   position: relative;
 }
-.bestsellers__item:hover .bestsellers__action {
+.products__item:hover .products__action {
   display: flex;
 }
-.bestsellers__link {
+.products__link {
   padding-top: 22px;
 }
-.bestsellers__flag {
+.products__flag {
   top: 0;
   right: 4%;
   position: absolute;
   display: block;
-  padding-top: 8%;
-  padding-bottom: 8%;
   min-width: 30px;
   width: 23%;
   text-align: center;
@@ -875,11 +1000,19 @@ The `.retina-sprites` mixin generates a CSS rule and media query for retina grou
   font-weight: bold;
   font-size: 1.3rem;
   line-height: 1.5rem;
+  padding-top: 9%;
+  padding-bottom: 9%;
 }
-.bestsellers__flag--outofstock {
+.products__flag--sale {
+  background-color: #242424;
+}
+.products__flag--outofstock {
   background-color: #f27e4b;
+  line-height: 1.6rem;
+  padding-top: 6%;
+  padding-bottom: 6%;
 }
-.bestsellers__action {
+.products__action {
   z-index: 100;
   display: none;
   position: absolute;
@@ -896,28 +1029,28 @@ The `.retina-sprites` mixin generates a CSS rule and media query for retina grou
   padding-right: 14%;
   align-items: center;
 }
-.bestsellers__action a {
+.products__action a {
   display: block;
   height: 16px;
   font-size: 0;
 }
-.bestsellers__action svg {
+.products__action svg {
   fill: #6e6e6e;
 }
-.bestsellers__action--buy svg {
+.products__action--buy svg {
   fill: #57c5a0;
 }
-.bestsellers__img {
+.products__img {
   display: block;
   margin: auto;
 }
-.bestsellers__item-inner {
+.products__item-inner {
   position: relative;
   padding-top: 11px;
   padding-bottom: 12px;
   border-top: 1px solid #ccc;
 }
-.bestsellers__price {
+.products__price {
   min-width: 50px;
   left: 4%;
   bottom: 0;
@@ -935,7 +1068,8 @@ The `.retina-sprites` mixin generates a CSS rule and media query for retina grou
   padding-top: 20px;
   padding-bottom: 21px;
 }
-.bestsellers__name {
+.products__name {
+  display: block;
   font-family: Aller, Arial, sans-serif;
   font-size: 1.8rem;
   line-height: 2.5rem;
@@ -943,136 +1077,6 @@ The `.retina-sprites` mixin generates a CSS rule and media query for retina grou
   color: #242424;
   margin: 0;
   margin-left: 32%;
-}
-.addons {
-  border-top: 1px solid #bcb5a7;
-  display: flex;
-  justify-content: space-between;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  padding-top: 25px;
-}
-.shipping {
-  width: 19%;
-  background-color: #dfdbd4;
-  padding-top: 30px;
-  padding-bottom: 30px;
-  padding-left: 1.5%;
-  padding-right: 2%;
-}
-.shipping__title {
-  font-family: Aller, Arial, sans-serif;
-  font-size: 1.4rem;
-  line-height: 1.6rem;
-  font-weight: bold;
-  color: #242424;
-  text-transform: uppercase;
-  margin: 0;
-}
-.shipping__text {
-  margin: 0;
-  font-family: Aller, Arial, sans-serif;
-  font-size: 1.2rem;
-  line-height: 1.6rem;
-  color: #242424;
-  margin-top: 20px;
-}
-.testimonials {
-  width: 19%;
-  background-color: #dfdbd4;
-  padding-top: 30px;
-  padding-bottom: 30px;
-  padding-left: 1.5%;
-  padding-right: 2%;
-}
-.testimonials__title {
-  font-family: Aller, Arial, sans-serif;
-  font-size: 1.4rem;
-  line-height: 1.6rem;
-  font-weight: bold;
-  color: #242424;
-  text-transform: uppercase;
-  margin: 0;
-}
-.testimonials__text {
-  margin: 0;
-  padding: 0;
-  font-family: Aller, Arial, sans-serif;
-  font-size: 1.2rem;
-  line-height: 1.6rem;
-  color: #242424;
-  margin-top: 20px;
-}
-.testimonials cite {
-  display: block;
-  font-style: italic;
-  margin-top: 10px;
-}
-.blog {
-  width: 47%;
-  background-color: #dfdbd4;
-  padding-top: 30px;
-  padding-bottom: 30px;
-  padding-left: 1.5%;
-  padding-right: 2%;
-}
-.blog__title {
-  font-family: Aller, Arial, sans-serif;
-  font-size: 1.4rem;
-  line-height: 1.6rem;
-  font-weight: bold;
-  color: #242424;
-  text-transform: uppercase;
-  margin: 0;
-}
-.blog__list {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  margin-top: 20px;
-}
-.blog__item {
-  display: flex;
-  justify-content: flex-start;
-  margin-bottom: 14px;
-  align-items: center;
-}
-.blog__date {
-  display: block;
-  background-color: #57c5a0;
-  width: 9%;
-  padding-top: 9px;
-  padding-bottom: 8px;
-  min-width: 18px;
-  font-family: Aller, Arial, sans-serif;
-  font-size: 1rem;
-  line-height: 1.2rem;
-  font-weight: bold;
-  color: #fff;
-  text-transform: uppercase;
-  text-align: center;
-}
-.blog__inner {
-  margin-left: 10px;
-}
-.blog__news-title {
-  font-family: Aller, Arial, sans-serif;
-  font-size: 1.4rem;
-  line-height: 1.6rem;
-  font-weight: bold;
-  color: #242424;
-  margin: 0;
-}
-.blog__news-title:hover {
-  color: #242424;
-}
-.blog__lead {
-  font-family: Aller, Arial, sans-serif;
-  font-size: 1.2rem;
-  line-height: 1.6rem;
-  color: #242424;
-  margin: 0;
 }
 .promo-slider {
   background-color: #ebe7df;
@@ -1080,6 +1084,9 @@ The `.retina-sprites` mixin generates a CSS rule and media query for retina grou
   background-image: url("../img/promo__bg.jpg");
   background-repeat: no-repeat;
   background-position: center;
+}
+.promo-slider--catalog {
+  background-position: bottom;
 }
 @media (-webkit-min-device-pixel-ratio: 2) {
   .promo-slider {
@@ -1093,6 +1100,16 @@ The `.retina-sprites` mixin generates a CSS rule and media query for retina grou
   padding-top: 70px;
   padding-bottom: 95px;
   max-width: 390px;
+}
+.promo-slider__wrap--catalog {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.promo-slider__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
 }
 .promo-slider__price {
   background-color: #57c5a0;
@@ -1114,6 +1131,9 @@ The `.retina-sprites` mixin generates a CSS rule and media query for retina grou
   color: #242424;
   margin: 0;
   margin-top: 40px;
+}
+.promo-slider__title--catalog {
+  margin: 0;
 }
 .promo-slider__text {
   font-family: Aller, Arial, sans-serif;
@@ -1312,6 +1332,7 @@ The `.retina-sprites` mixin generates a CSS rule and media query for retina grou
   display: flex;
   justify-content: space-between;
   padding-bottom: 30px;
+  flex-wrap: wrap;
 }
 .widgets__text {
   width: 28%;

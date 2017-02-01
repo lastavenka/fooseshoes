@@ -84,6 +84,7 @@ module.exports = function (grunt) {
                   "img/*.*",
                   "js/**",
                   "index.html",
+                "products.html",
                   "bower_components",
                   "type/**"
               ],
@@ -96,7 +97,7 @@ module.exports = function (grunt) {
                     expand: true,
                     cwd: "source",
                     src: [
-                  "index.html"
+                  "*.html"
                 ],
                     dest: "build"
             }]
@@ -172,7 +173,7 @@ module.exports = function (grunt) {
             },
 
             html: {
-                files: ["source/index.html"],
+                files: ["source/*.html"],
                 tasks: ["copy:buildHTML"],
                 options: {
                     spawn: false
